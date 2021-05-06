@@ -1,0 +1,737 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{39FC0C15-170A-3E3F-8892-C0AA0F5925E0}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>libui</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\downloads\Downloads\libui-alpha4.1\out\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libui.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libui</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">libui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\downloads\Downloads\libui-alpha4.1\out\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libui.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libui</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\downloads\Downloads\libui-alpha4.1\out\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libui.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libui</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">libui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\downloads\Downloads\libui-alpha4.1\out\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libui.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libui</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">libui</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>UninitializedLocalUsageCheck</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;libui_EXPORTS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;libui_EXPORTS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>user32.lib;kernel32.lib;gdi32.lib;comctl32.lib;uxtheme.lib;msimg32.lib;comdlg32.lib;d2d1.lib;dwrite.lib;ole32.lib;oleaut32.lib;oleacc.lib;uuid.lib;windowscodecs.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/downloads/Downloads/libui-alpha4.1/out/Debug/libui.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>D:/downloads/Downloads/libui-alpha4.1/out/Debug/libui.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>UninitializedLocalUsageCheck</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;libui_EXPORTS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;libui_EXPORTS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>user32.lib;kernel32.lib;gdi32.lib;comctl32.lib;uxtheme.lib;msimg32.lib;comdlg32.lib;d2d1.lib;dwrite.lib;ole32.lib;oleaut32.lib;oleacc.lib;uuid.lib;windowscodecs.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/downloads/Downloads/libui-alpha4.1/out/Debug/libui.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>D:/downloads/Downloads/libui-alpha4.1/out/Debug/libui.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;libui_EXPORTS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;libui_EXPORTS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>user32.lib;kernel32.lib;gdi32.lib;comctl32.lib;uxtheme.lib;msimg32.lib;comdlg32.lib;d2d1.lib;dwrite.lib;ole32.lib;oleaut32.lib;oleacc.lib;uuid.lib;windowscodecs.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/downloads/Downloads/libui-alpha4.1/out/Release/libui.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>D:/downloads/Downloads/libui-alpha4.1/out/Release/libui.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;libui_EXPORTS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;libui_EXPORTS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>user32.lib;kernel32.lib;gdi32.lib;comctl32.lib;uxtheme.lib;msimg32.lib;comdlg32.lib;d2d1.lib;dwrite.lib;ole32.lib;oleaut32.lib;oleacc.lib;uuid.lib;windowscodecs.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/downloads/Downloads/libui-alpha4.1/out/Release/libui.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>D:/downloads/Downloads/libui-alpha4.1/out/Release/libui.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;libui_EXPORTS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;libui_EXPORTS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>user32.lib;kernel32.lib;gdi32.lib;comctl32.lib;uxtheme.lib;msimg32.lib;comdlg32.lib;d2d1.lib;dwrite.lib;ole32.lib;oleaut32.lib;oleacc.lib;uuid.lib;windowscodecs.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/downloads/Downloads/libui-alpha4.1/out/MinSizeRel/libui.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>D:/downloads/Downloads/libui-alpha4.1/out/MinSizeRel/libui.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;libui_EXPORTS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;libui_EXPORTS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>user32.lib;kernel32.lib;gdi32.lib;comctl32.lib;uxtheme.lib;msimg32.lib;comdlg32.lib;d2d1.lib;dwrite.lib;ole32.lib;oleaut32.lib;oleacc.lib;uuid.lib;windowscodecs.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/downloads/Downloads/libui-alpha4.1/out/MinSizeRel/libui.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>D:/downloads/Downloads/libui-alpha4.1/out/MinSizeRel/libui.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;libui_EXPORTS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;libui_EXPORTS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>user32.lib;kernel32.lib;gdi32.lib;comctl32.lib;uxtheme.lib;msimg32.lib;comdlg32.lib;d2d1.lib;dwrite.lib;ole32.lib;oleaut32.lib;oleacc.lib;uuid.lib;windowscodecs.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/downloads/Downloads/libui-alpha4.1/out/RelWithDebInfo/libui.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>D:/downloads/Downloads/libui-alpha4.1/out/RelWithDebInfo/libui.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;libui_EXPORTS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;libui_EXPORTS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\downloads\Downloads\libui-alpha4.1\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>user32.lib;kernel32.lib;gdi32.lib;comctl32.lib;uxtheme.lib;msimg32.lib;comdlg32.lib;d2d1.lib;dwrite.lib;ole32.lib;oleaut32.lib;oleacc.lib;uuid.lib;windowscodecs.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/downloads/Downloads/libui-alpha4.1/out/RelWithDebInfo/libui.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>D:/downloads/Downloads/libui-alpha4.1/out/RelWithDebInfo/libui.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\downloads\Downloads\libui-alpha4.1\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/downloads/Downloads/libui-alpha4.1/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/downloads/Downloads/libui-alpha4.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\program files\CMake\bin\cmake.exe" -SD:/downloads/Downloads/libui-alpha4.1 -BD:/downloads/Downloads/libui-alpha4.1 --check-stamp-file D:/downloads/Downloads/libui-alpha4.1/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\program files\CMake\bin\cmake.exe" -SD:/downloads/Downloads/libui-alpha4.1 -BD:/downloads/Downloads/libui-alpha4.1 --check-stamp-file D:/downloads/Downloads/libui-alpha4.1/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeCCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeCXXCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeRCCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;D:\program files\CMake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeCCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeCXXCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeRCCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;D:\program files\CMake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/downloads/Downloads/libui-alpha4.1/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/downloads/Downloads/libui-alpha4.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\program files\CMake\bin\cmake.exe" -SD:/downloads/Downloads/libui-alpha4.1 -BD:/downloads/Downloads/libui-alpha4.1 --check-stamp-file D:/downloads/Downloads/libui-alpha4.1/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\program files\CMake\bin\cmake.exe" -SD:/downloads/Downloads/libui-alpha4.1 -BD:/downloads/Downloads/libui-alpha4.1 --check-stamp-file D:/downloads/Downloads/libui-alpha4.1/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeCCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeCXXCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeRCCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;D:\program files\CMake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeCCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeCXXCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeRCCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;D:\program files\CMake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/downloads/Downloads/libui-alpha4.1/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/downloads/Downloads/libui-alpha4.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"D:\program files\CMake\bin\cmake.exe" -SD:/downloads/Downloads/libui-alpha4.1 -BD:/downloads/Downloads/libui-alpha4.1 --check-stamp-file D:/downloads/Downloads/libui-alpha4.1/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\program files\CMake\bin\cmake.exe" -SD:/downloads/Downloads/libui-alpha4.1 -BD:/downloads/Downloads/libui-alpha4.1 --check-stamp-file D:/downloads/Downloads/libui-alpha4.1/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeCCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeCXXCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeRCCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;D:\program files\CMake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeCCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeCXXCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeRCCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;D:\program files\CMake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/downloads/Downloads/libui-alpha4.1/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/downloads/Downloads/libui-alpha4.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"D:\program files\CMake\bin\cmake.exe" -SD:/downloads/Downloads/libui-alpha4.1 -BD:/downloads/Downloads/libui-alpha4.1 --check-stamp-file D:/downloads/Downloads/libui-alpha4.1/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\program files\CMake\bin\cmake.exe" -SD:/downloads/Downloads/libui-alpha4.1 -BD:/downloads/Downloads/libui-alpha4.1 --check-stamp-file D:/downloads/Downloads/libui-alpha4.1/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeCCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeCXXCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeRCCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;D:\program files\CMake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeCCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeCXXCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeRCCompiler.cmake;D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\3.18.3\CMakeSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCCompilerABI.c;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXCompilerABI.cpp;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeCompilerIdDetection.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCXXCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompileFeatures.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerABI.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineCompilerId.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineRCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeDetermineSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeFindBinUtils.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeParseImplicitLinkInfo.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeRCCompiler.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystem.cmake.in;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCXXCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestCompilerCommon.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CMakeTestRCCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\TI-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\program files\CMake\share\cmake-3.18\Modules\CompilerId\VS-10.vcxproj.in;D:\program files\CMake\share\cmake-3.18\Modules\Internal\FeatureTesting.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-Determine-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;D:\program files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\downloads\Downloads\libui-alpha4.1\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\attribute.c" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\attrlist.c" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\attrstr.c">
+      <ObjectFileName>$(IntDir)/common/attrstr.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\areaevents.c">
+      <ObjectFileName>$(IntDir)/common/areaevents.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\control.c">
+      <ObjectFileName>$(IntDir)/common/control.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\debug.c">
+      <ObjectFileName>$(IntDir)/common/debug.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\matrix.c" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\opentype.c">
+      <ObjectFileName>$(IntDir)/common/opentype.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\shouldquit.c" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\tablemodel.c" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\tablevalue.c" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\userbugs.c" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\utf.c" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\alloc.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\area.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\areadraw.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\areaevents.cpp">
+      <ObjectFileName>$(IntDir)/windows/areaevents.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\areascroll.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\areautil.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\attrstr.cpp">
+      <ObjectFileName>$(IntDir)/windows/attrstr.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\box.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\button.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\checkbox.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\colorbutton.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\colordialog.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\combobox.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\container.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\control.cpp">
+      <ObjectFileName>$(IntDir)/windows/control.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\d2dscratch.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\datetimepicker.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\debug.cpp">
+      <ObjectFileName>$(IntDir)/windows/debug.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\draw.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\drawmatrix.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\drawpath.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\drawtext.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\dwrite.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\editablecombo.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\entry.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\events.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\fontbutton.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\fontdialog.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\fontmatch.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\form.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\graphemes.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\grid.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\group.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\image.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\init.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\label.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\main.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\menu.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\multilineentry.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\opentype.cpp">
+      <ObjectFileName>$(IntDir)/windows/opentype.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\parent.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\progressbar.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\radiobuttons.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\separator.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\sizing.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\slider.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\spinbox.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\stddialogs.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\tab.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\table.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\tabledispinfo.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\tabledraw.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\tableediting.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\tablemetrics.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\tabpage.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\text.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\utf16.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\utilwin.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\window.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\winpublic.cpp" />
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\winutil.cpp" />
+    <ResourceCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\downloads\Downloads\libui-alpha4.1\ZERO_CHECK.vcxproj">
+      <Project>{D7B1DD99-4D04-3851-AEBD-31EC3AEAA308}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

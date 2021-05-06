@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\attribute.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\attrlist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\attrstr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\areaevents.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\control.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\debug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\matrix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\opentype.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\shouldquit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\tablemodel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\tablevalue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\userbugs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\common\utf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\alloc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\area.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\areadraw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\areaevents.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\areascroll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\areautil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\attrstr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\box.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\checkbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\colorbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\colordialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\combobox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\container.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\control.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\d2dscratch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\datetimepicker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\drawmatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\drawpath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\drawtext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\dwrite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\editablecombo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\entry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\events.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\fontbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\fontdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\fontmatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\form.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\graphemes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\grid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\group.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\label.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\multilineentry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\opentype.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\parent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\progressbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\radiobuttons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\separator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\sizing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\slider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\spinbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\stddialogs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\tab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\tabledispinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\tabledraw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\tableediting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\tablemetrics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\tabpage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\text.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\utf16.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\utilwin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\winpublic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\winutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\downloads\Downloads\libui-alpha4.1\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\downloads\Downloads\libui-alpha4.1\windows\resources.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E24B08F3-BB65-38C9-BC5A-8FCBF789283F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
